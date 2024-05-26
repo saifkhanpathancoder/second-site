@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href=" ./fontawesome-free-6.4.2-web/css/all.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,900&family=Rubik:ital,wght@0,600;0,700;0,800;0,900;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My final project</title>
+  </head>
+  <!-- <input type="checkbox" class="header__checkbox" id="navi-togle" />
+  <label for="navi-togle" class="header__button">
+    <span class="header__icon"></span>
+  </label> -->
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__image-holder">
+          <img src="images/sound.png" alt="break" class="sidebar__img-1" />
+        </div>
+
+        <nav class="navigation">
+          <ul class="navigation__item">
+            <li class="navigation__list navigation__list--active">
+              <a
+                href="https://www.headphonezone.in/"
+                class="navigation__link navigation__link--active"
+              >
+                <i class="fa-solid fa-house navigation__icon"></i>
+                <span> Home</span>
+              </a>
+            </li>
+            <li class="navigation__list">
+              <a href="https://www.beatsbydre.com/" class="navigation__link">
+                <i class="fa-solid fa-compass navigation__icon"></i>
+                <span> Explore</span>
+              </a>
+            </li>
+            <li class="navigation__list">
+              <a
+                href="https://www.bing.com/images/search?q=saved+beat+solo+headset+page&qpvt=saved+beat+solo+headset+page&form=IGRE&first=1"
+                class="navigation__link"
+              >
+                <i class="fa-regular fa-heart navigation__icon"></i>
+                <span> Saved</span>
+              </a>
+            </li>
+            <li class="navigation__list">
+              <a
+                href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart"
+                class="navigation__link"
+              >
+                <i class="fa-solid fa-cart-shopping navigation__icon"></i>
+                <span> Cart</span>
+              </a>
+            </li>
+            <li class="navigation__list">
+              <a
+                href="https://www.bing.com/search?pglt=43&q=selling+beat+solo+headset&cvid=89d1d47946ce4192bf11b2092d4c82b0&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQk0MDIyMmowajGoAgiwAgE&FORM=ANNTA1&PC=U531"
+                class="navigation__link"
+              >
+                <i class="fa-brands fa-sellsy navigation__icon"></i>
+                <span> Selling</span>
+              </a>
+            </li>
+            <li class="navigation__list">
+              <a
+                href="https://www.soundguys.com/beats-solo-4-review-115347/"
+                class="navigation__link"
+              >
+                <i class="fa-regular fa-user navigation__icon"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li class="navigation__list">
+              <a
+                href="https://www.beatsbydre.com/headphones/solo4-wireless"
+                class="navigation__link"
+              >
+                <i class="fa-solid fa-clock-rotate-left navigation__icon"></i>
+                <span>Purchase history</span>
+              </a>
+            </li>
+            <li class="navigation__list">
+              <a href="https://headphones.com/" class="navigation__link">
+                <i class="fa-regular fa-message navigation__icon"></i>
+                <span>Contact us</span>
+              </a>
+            </li>
+            <li class="navigation__list">
+              <a
+                href="https://www.bing.com/videos/search?q=setting+for+beat+solo+headset+setting&qpvt=setting+for+beat+solo+headset+setting&FORM=VDRE"
+                class="navigation__link"
+              >
+                <i class="fa-solid fa-gear navigation__icon"></i>
+                <span>Setting</span>
+              </a>
+            </li>
+          </ul>
+          <div class="navigation__container">
+            <img
+              src="images/flex.png"
+              alt="image not found"
+              class="navigation__image-flex"
+            />
+          </div>
+        </nav>
+      </div>
+
+      <main class="main-content">
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="header__head-wrap">
+              <h2 class="header__heading-primary">Headphones</h2>
+              <span class="header__heading-secondary">From top brands</span>
+            </div>
+            <form action="#" class="header__search">
+              <div class="header__form">
+                <button class="header__button">
+                  <i class="fa-solid fa-magnifying-glass header__icon"></i>
+
+                  <input
+                    type="text"
+                    class="header__input"
+                    placeholder="search products"
+                  />
+                </button>
+              </div>
+            </form>
+
+            <div class="header__user">
+              <div class="header__image-wrap">
+                <img
+                  src="images/contact.png"
+                  alt="Image not found"
+                  class="header__image-1"
+                />
+              </div>
+              <div class="header__image-wrap">
+                <img
+                  src="images/bell.png"
+                  alt="Image not found"
+                  class="header__image-1"
+                />
+              </div>
+              <div class="header__image-wrap">
+                <img
+                  src="images/mask.png"
+                  alt="Image not found"
+                  class="header__image-1"
+                />
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="detail">
+          <div class="main-holder">
+            <div class="card-head">
+              <div class="card-head__image-holder">
+                <a href="https://www.croma.com/">
+                  <img
+                    src="images/head.png"
+                    alt="Image not found"
+                    class="card-head__img-1"
+                  />
+                </a>
+              </div>
+              <div class="card-head__text-holder">
+                <h3 class="card-head__heading-primary">
+                  Beats Studio3 Wireless Headphone
+                </h3>
+                <div class="card-head__icon-holder">
+                  <i class="fa-solid fa-star card-head__icon"></i>
+                  <i class="fa-solid fa-star card-head__icon"></i>
+                  <i class="fa-solid fa-star card-head__icon"></i>
+                  <i class="fa-solid fa-star card-head__icon"></i>
+                  <i class="fa-solid fa-star card-head__icon"></i>
+                  <h4 class="card-head__heading-tertiary">(2000 + reviews)</h4>
+                </div>
+                <p class="card-head__paragraph">
+                  Ergonomic ear cups with on-ear controls. Up to 22 hours of<br />
+                  listening time. Apple W1 chip & Class 1 Wireless Bluetooth.
+                </p>
+                <h4 class="card-head__heading-small">Price $349.95</h4>
+                <div class="card-head__color-div">
+                  <div class="card-head__wrap">
+                    <h2 class="card-head__text">Color</h2>
+                    <div class="card-head__div-1"></div>
+                    <div class="card-head__div-big">
+                      <div class="card-head__div-2"></div>
+                    </div>
+                    <div class="card-head__div-3"></div>
+                    <div class="card-head__div-4"></div>
+                  </div>
+                  <div class="card-head__counter">
+                    <div class="card-head__circle">
+                      <img
+                        src="images/line.png"
+                        alt="Image not found"
+                        class="card-head__line"
+                      />
+                    </div>
+                    <h2 class="card-head__heading-text">1</h2>
+                    <div class="card-head__circle">
+                      <h2 class="card-head__heading-plus">+</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-head__button-holder">
+                  <button class="card-head__button-heart">
+                    <i class="fa-solid fa-heart card-head__icon-heart"></i>
+                  </button>
+                  <button class="card-head__button-cart">Add to cart</button>
+                  <button class="card-head__button-buy">Buy now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="selection">
+                <div class="selection__img-holder">
+                  <a href="https://www.amazon.in/">
+                    <img
+                      src="images/head-1.png"
+                      alt="image not found"
+                      class="selection__image-1"
+                    />
+                  </a>
+                </div>
+
+                <div class="selection__heading-primary">
+                  Original Beats Solo Pro
+                </div>
+                <h4 class="selection__heading-tertiary">Price $333.20</h4>
+                <div class="selection__holder">
+                  <div class="selection__icon-hold">
+                    <i class="fa-solid fa-star selection__icon-small"></i>
+                    <h4 class="selection__heading-rating">4.5</h4>
+                  </div>
+                  <button class="selection__button">
+                    <div class="selection__head-num">+</div>
+                  </button>
+                </div>
+              </div>
+              <div class="selection">
+                <div class="selection__img-holder">
+                  <a
+                    href="https://www.amazon.in/ZEBRONICS-Wireless-Headphone-Supports-Bluetooth/dp/B0CZF4P3BC?ref_=ast_sto_dp&th=1&psc=1"
+                  >
+                    <img
+                      src="images/head-2.png"
+                      alt="image not found"
+                      class="selection__image-1"
+                    />
+                  </a>
+                </div>
+
+                <div class="selection__heading-primary">
+                  Beats Studio3 Bluetooth
+                </div>
+                <h4 class="selection__heading-tertiary">Price $119.88</h4>
+                <div class="selection__holder">
+                  <div class="selection__icon-hold">
+                    <i class="fa-solid fa-star selection__icon-small"></i>
+                    <h4 class="selection__heading-rating">5.0</h4>
+                  </div>
+                  <button class="selection__button">
+                    <div class="selection__head-num">+</div>
+                  </button>
+                </div>
+              </div>
+              <div class="selection">
+                <div class="selection__img-holder">
+                  <a
+                    href="https://www.amazon.in/ZEBRONICS-Wireless-Headphone-Supports-Bluetooth/dp/B0CZF4P3BC?ref_=ast_sto_dp&th=1&psc=1"
+                  >
+                    <img
+                      src="images/head-3.png"
+                      alt="image not found"
+                      class="selection__image-1"
+                    />
+                  </a>
+                </div>
+
+                <div class="selection__heading-primary">
+                  Beats Solo3 Wireless
+                </div>
+                <h4 class="selection__heading-tertiary">Price $199.95</h4>
+                <div class="selection__holder">
+                  <div class="selection__icon-hold">
+                    <i class="fa-solid fa-star selection__icon-small"></i>
+                    <h4 class="selection__heading-rating">4.8</h4>
+                  </div>
+                  <button class="selection__button">
+                    <div class="selection__head-num">+</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="explore">
+              <h2 class="explore__heading-primary">
+                Explore Popular Categories
+              </h2>
+              <h3 class="explore__heading-secondary">
+                See all
+                <span class="explore__arrow"
+                  ><i class="fa-solid fa-arrow-right explore__icon"></i
+                ></span>
+              </h3>
+            </div>
+
+            <div class="card-user">
+              <div class="card-user__review">
+                <div class="card-user__figure">
+                  <img
+                    src="images/sony.png"
+                    alt="image not found"
+                    class="card-user__image-p"
+                  />
+                  <img
+                    src="images/apple.png"
+                    alt="image not found"
+                    class="card-user__image-p"
+                  />
+
+                  <img
+                    src="images/ball.png"
+                    alt="image not found"
+                    class="card-user__image-p"
+                  />
+                  <img
+                    src="images/lenovo.png"
+                    alt="image not found"
+                    class="card-user__image-p"
+                  />
+                </div>
+                <div class="card-user__text">
+                  <h4 class="card-user__heading-primary">
+                    Popular top 10 brands
+                  </h4>
+                  <h4 class="card-user__heading-secondary">
+                    5,400+ Orders & reviews
+                  </h4>
+                </div>
+              </div>
+              <div class="card-user__review">
+                <div class="card-user__figure">
+                  <img
+                    src="images/Frame 1.png"
+                    alt="image not found"
+                    class="card-user__image-p"
+                  />
+                  <img
+                    src="images/Frame 2.png"
+                    alt="image not found"
+                    class="card-user__image-p"
+                  />
+
+                  <img
+                    src="images/Frame 3.png"
+                    alt="image not found"
+                    class="card-user__image-p"
+                  />
+                  <img
+                    src="images/Frame 4.png"
+                    alt="image not found"
+                    class="card-user__image-p"
+                  />
+                </div>
+                <div class="card-user__text">
+                  <h4 class="card-user__heading-primary">Newest Sellers</h4>
+                  <h4 class="card-user__heading-secondary">
+                    4,600+ Orders & reviews
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__image-hold">
+              <img
+                src="images/card.png"
+                alt="Image not found"
+                class="product__img"
+              />
+            </div>
+            <div class="all-wrapper">
+              <div class="product__holder">
+                <h2 class="product__heading-primary">Daily Deals</h2>
+                <h3 class="product__heading-secondary">
+                  View all
+                  <span class="product__arrow"
+                    ><i class="fa-solid fa-arrow-right product__icon"></i
+                  ></span>
+                </h3>
+              </div>
+              <div class="product-list">
+                <div class="product-list__img-wrap">
+                  <img
+                    src="images/phone-1.png"
+                    alt="image not found"
+                    class="product-list__image-first"
+                  />
+                </div>
+                <div class="product-list__text">
+                  <h4 class="product-list__heading-primary">
+                    beats new studio blue headset
+                  </h4>
+                  <span class="product-list__heading-small"
+                    >256 Reviews 1628 orders</span
+                  >
+                </div>
+                <div class="product-list__rating">
+                  <h4 class="product-list__heading-secondary">Price $320</h4>
+                </div>
+              </div>
+              <div class="product-list">
+                <div class="product-list__img-wrap">
+                  <img
+                    src="images/phone-2.png"
+                    alt="image not found"
+                    class="product-list__image-first"
+                  />
+                </div>
+                <div class="product-list__text">
+                  <h4 class="product-list__heading-primary">
+                    beats pro wireless Headset
+                  </h4>
+                  <span class="product-list__heading-small"
+                    >205 Reviews 1906 orders</span
+                  >
+                </div>
+                <div class="product-list__rating">
+                  <h4 class="product-list__heading-secondary">Price $199</h4>
+                </div>
+              </div>
+              <div class="product-list">
+                <div class="product-list__img-wrap">
+                  <img
+                    src="images/phone-7.jpg"
+                    alt="image not found"
+                    class="product-list__image-first"
+                  />
+                </div>
+                <div class="product-list__text">
+                  <h4 class="product-list__heading-primary">
+                    Apple AirPods Pro
+                  </h4>
+                  <span class="product-list__heading-small"
+                    >991 Reviews 8682 orders</span
+                  >
+                </div>
+                <div class="product-list__rating">
+                  <h4 class="product-list__heading-secondary">Price $249</h4>
+                </div>
+              </div>
+              <div class="product-list">
+                <div class="product-list__img-wrap">
+                  <img
+                    src="images/phone-4.png"
+                    alt="image not found"
+                    class="product-list__image-first"
+                  />
+                </div>
+                <div class="product-list__text">
+                  <h4 class="product-list__heading-primary">
+                    Lenovo Wired Headphone
+                  </h4>
+                  <span class="product-list__heading-small"
+                    >364 Reviews 2791 orders</span
+                  >
+                </div>
+                <div class="product-list__rating">
+                  <h4 class="product-list__heading-secondary">Price $05</h4>
+                </div>
+              </div>
+              <div class="product-list">
+                <div class="product-list__img-wrap">
+                  <img
+                    src="images/phone-5.png"
+                    alt="image not found"
+                    class="product-list__image-first"
+                  />
+                </div>
+                <div class="product-list__text">
+                  <h4 class="product-list__heading-primary">
+                    Logic3 Cavallino T250 Headset
+                  </h4>
+                  <span class="product-list__heading-small"
+                    >128 Reviews 0850 orders</span
+                  >
+                </div>
+                <div class="product-list__rating">
+                  <h4 class="product-list__heading-secondary">Price $100</h4>
+                </div>
+              </div>
+              <div class="product-list">
+                <div class="product-list__img-wrap">
+                  <img
+                    src="images/phone-6.png"
+                    alt="image not found"
+                    class="product-list__image-first"
+                  />
+                </div>
+                <div class="product-list__text">
+                  <h4 class="product-list__heading-primary">
+                    Musicians Choice Stereo
+                  </h4>
+                  <span class="product-list__heading-small"
+                    >116 Reviews 0640 orders</span
+                  >
+                </div>
+                <div class="product-list__rating">
+                  <h4 class="product-list__heading-secondary">Price $22</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

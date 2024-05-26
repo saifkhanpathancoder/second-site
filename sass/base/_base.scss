@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+//Color
+
+$color-white-1: rgba(255, 255, 255, 1);
+$color-white-2: rgba(242, 242, 242, 1);
+
+html {
+  font-family: inherit;
+  font-size: 62.5%;
+  @media only screen and (max-width: 1200px) {
+    font-size: 50.5%;
+  }
+  @media only screen and (max-width: 890px) {
+    font-size: 48.5%;
+  }
+  @media only screen and (max-width: 710px) {
+    font-size: 45.3%;
+  }
+  @media only screen and (max-width: 610px) {
+    font-size: 40.3%;
+  }
+  @media only screen and (max-width: 550px) {
+    font-size: 35.3%;
+  }
+  @media only screen and (max-width: 480px) {
+    font-size: 30.3%;
+  }
+}
+
+body {
+  background-color: rgb(227, 227, 227);
+}
